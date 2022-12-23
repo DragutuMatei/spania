@@ -46,6 +46,11 @@
     flex: 1;
   }
 }
+$valoareAbt:150px;
+.imagineAbt{
+  margin-top: $valoareAbt;
+  margin-bottom: -$valoareAbt;
+}
 
 .eff {
   width: 100vw;
@@ -163,12 +168,13 @@
     }
   }
 }
-
+@import "_abtCards.scss";
 @import "dep";
 @import "contact";
 @import "navbar";
 @import "resize";
 @import "footer";
+
 
 .contact {
   border-top: 5px solid $light_blue;
