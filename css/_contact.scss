@@ -1,0 +1,52 @@
+.contact {
+  width: 100vw;
+  min-height: 300px;
+  // padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  background: url(../img/altu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    line-height: 1;
+    margin: 40px;
+
+    .op {
+      font-size: 60px;
+      color: rgba($light_green, 0.4);
+    }
+    .ful {
+      margin-top: -25px;
+      font-size: 60px;
+      margin-left: 25px;
+      color: $light_green;
+    }
+    .d {
+      margin-top: -25px;
+    }
+  }
+
+  .button {
+    width: auto;
+    padding: 30px 60px;
+    background: $dark_green;
+    color: white;
+    font-size: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: $light_green;
+    }
+  }
+}

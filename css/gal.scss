@@ -1,0 +1,36 @@
+@import "variabile";
+@import "base";
+
+.galery {
+  width: 100%;
+  padding: 150px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  .img {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+      object-fit: cover;
+      width: 450px;
+      height: auto;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+@import "contact";
+@import "dep";
+@import "navbar";
+@import "resize";
+@import "footer";

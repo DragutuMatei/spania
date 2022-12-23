@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  text-decoration: none;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+p,
+div time {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+}
+p {
+  text-indent: 30px;
+}
+a,
+h4,
+h5,
+h6,
+span {
+  font-weight: 600 !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-weight: 900 !important;
+  font-family: "Karla", sans-serif !important;
+}
+
+.scris_anim,
+.misiune_efect {
+  user-select: none;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 50px;
+  background: $dark_blue;
+  z-index: 99;
+  justify-content: space-around;
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+  img {
+    height: 100%;
+  }
+}
+.clients {
+  background: rgba($light_blue, 0.2);
+  padding: 50px 0;
+}
+.box {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: max-content;
+  height: auto;
+  transition: transform 0.5s ease-in;
+  margin: 8px auto;
+}
+.owl-carousel .owl-item img {
+  width: auto !important;
+  height: 200px;
+  position: relative;
+  object-fit: contain;
+}

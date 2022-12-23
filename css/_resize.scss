@@ -1,0 +1,42 @@
+@media screen and(max-width:1000px) {
+  .avan {
+    flex-direction: column;
+    height: auto;
+
+    .dr {
+      .scris_anim {
+        left:-500px ;
+        top: 0%;
+      }
+        max-width: 90%;
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
+}
+@media screen and (max-width: 830px) {
+  
+  .mana {
+    .misiune_efect {
+      left: -1500px;
+      font-size: 30px;
+    }
+  }
+  .cevatxt {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h2,
+    p {
+      flex: 0;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .txtsiimg .t {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,23 @@
+.dep {
+  width: 100vw;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+    color: #2f2f2f;
+  }
+}

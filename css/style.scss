@@ -1,0 +1,257 @@
+@import "variabile";
+@import "slider";
+@import "tabs";
+@import "base";
+
+.home {
+  z-index: 1;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 80px;
+  background-color: $light_blue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    z-index: 2;
+    padding: 30px 100px;
+    font-size: 70px;
+    color: rgb(41, 41, 41);
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    text-shadow: 3px 0px white;
+    top: 100px;
+
+    span {
+      letter-spacing: 10px;
+      font-size: 120px;
+      color: white;
+      text-shadow: 3px 0px black;
+    }
+  }
+  p {
+    padding: 30px;
+    font-size: 20px;
+    max-width: 400px;
+  }
+}
+.mare {
+  top: 80px;
+  right: 0;
+  max-width: 800px;
+  z-index: 1;
+  position: absolute;
+  z-index: 5;
+}
+.mic {
+  position: absolute;
+  // bottom: -300px;
+  top: calc(100vh - 300px);
+  left: 0;
+  max-width: 400px;
+  z-index: 5;
+}
+.avantaje {
+  width: 100vw;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  top: 100px;
+
+  img {
+    width: 100vw;
+  }
+}
+
+.avan {
+  width: 100vw;
+  min-height: 530px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  // overflow: hidden;
+
+  .dr {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: calc(100% - 90px);
+    width: auto;
+    position: relative;
+    max-width: 50%;
+    bottom: 0;
+
+    .scris_anim {
+      position: absolute;
+      left: -300px;
+      top: 20px;
+      font-size: 70px;
+      color: rgba($dark_green, 0.2);
+      line-height: 128px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: $dark_blue;
+      z-index: 2;
+      margin: 15px 0;
+    }
+
+    p {
+      z-index: 2;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    a {
+      text-decoration: none;
+      color: $dark_blue;
+      z-index: 2;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    z-index: 2;
+    // height: 100%;
+    height: 530px;
+  }
+}
+.mana {
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+  // background: url(./img/11.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.551);
+    z-index: 1;
+  }
+
+  .misiune_efect {
+    z-index: 2;
+    left: -650px;
+    position: absolute;
+    top: 0px;
+    font-size: 100px;
+    line-height: 218px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba($dark_green, 0.2);
+    width: max-content;
+  }
+
+  .txt {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    text-align: center;
+
+    h2 {
+      font-size: 35px;
+      color: $dark_blue;
+      z-index: 2;
+      margin: 15px 0;
+    }
+    p {
+      text-align: justify;
+      z-index: 2;
+      font-size: 20px;
+      max-width: 80vw;
+      padding: 20px;
+    }
+  }
+}
+
+.advs {
+  width: 100vw;
+  min-height: 500px;
+  background: url(./img/values_mask.d8246a11c7776373.png);
+  //   background: url(./img/back_particules.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  padding: 60px 0;
+
+  .wr {
+    width: auto;
+    height: auto;
+    padding: 40px;
+    // &:hover .adv {
+    //   transform: translateY(-30px);
+    // }
+
+    .adv {
+      width: 265px;
+      height: 350px;
+      border-bottom: 2px solid $dark_blue;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      box-shadow: 10px 10px 15px 6px rgba(128, 128, 128, 0.243);
+      background: white;
+      transition: 0.4s ease-in-out;
+
+      h3 {
+        font-size: 30px;
+        text-align: justify;
+        padding: 15px;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+
+
+
+@import "contact";
+@import "dep";
+@import "navbar";
+@import "resize";
+@import "footer";

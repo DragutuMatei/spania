@@ -1,0 +1,132 @@
+@import "variabile";
+@import "base";
+
+.efect {
+  width: 100vw;
+  height: calc(2 * (100vh - 147px));
+  position: relative;
+
+  .nume {
+    position: absolute;
+    bottom: 10%;
+    // top: calc(50% + 6px);
+    left: 0px;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: $dark_green;
+    font-size: 80px;
+    z-index: 2;
+  }
+
+  .header {
+    width: 100vw;
+    height: calc(100vh - 147px);
+    background: url(../img/11.jpg);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
+    .svgg {
+      position: absolute;
+      width: 100vw;
+      height: auto;
+      bottom: 0;
+    }
+
+    .shape-fill {
+      fill: #ffffff;
+    }
+  }
+
+  .svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 90vw;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.rola {
+  width: 100vw;
+  background: $dark_green;
+  min-height: 400px;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 3;
+  padding-bottom: 60px;
+
+  .rola_text_anim {
+    position: absolute;
+    top: 50%;
+    // top: calc(50% + 6px);
+    left: 200px;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: rgba($light_green, 0.5);
+    font-size: 60px;
+  }
+
+  .rola_text_anim2 {
+    position: absolute;
+    top: 50%;
+    // top: calc(50% + 6px);
+    right: 300px;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: rgba($light_green, 0.5);
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 40px;
+    width: 100vw;
+    text-align: left;
+    color: $dark_blue;
+    z-index: 2;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 500px;
+    color: white;
+    z-index: 2;
+    align-self: flex-end;
+  }
+}
+.infos {
+  width: calc(100vw - 80px);
+  margin: 40px;
+  background: white;
+  margin-top: -60px;
+  z-index: 4;
+  position: relative;
+  padding: 30px;
+  border-radius: 35px;
+
+  p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    span{
+      font-weight: bold;
+    }
+  }
+}
+.presa_img {
+  margin-top: 90px;
+  width: 100vw;
+  height: auto;
+  object-fit: contain;
+}
+
+@import "dep";
+@import "contact";
+@import "time";
+@import "navbar";
+@import "resize";
+@import "footer";
